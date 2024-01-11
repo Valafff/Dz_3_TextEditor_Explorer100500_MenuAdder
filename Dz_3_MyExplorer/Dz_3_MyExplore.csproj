@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{63DA26D4-EA8B-43F0-BE82-F2B7A56F6BEA}</ProjectGuid>
+    <ProjectGuid>{0B6FC3B8-44D0-475C-88CD-3A6C96E3AE89}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Dz_3_MyExplorer</RootNamespace>
-    <AssemblyName>Dz_3_MyExplorer</AssemblyName>
+    <RootNamespace>File_Explorer_Tree</RootNamespace>
+    <AssemblyName>File_Explorer_Tree</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +79,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\02.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

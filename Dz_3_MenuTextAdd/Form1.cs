@@ -43,6 +43,7 @@ namespace Dz_3_MenuTextAdd
 						item.DropDownItems.Add(tb_SubItem.Text);
 					}
 				}
+				//((ToolStripDropDownButton)(menuStrip_test.Items[0])).DropDownItems.Add("sometext");
 			}
 			else
 			{
